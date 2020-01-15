@@ -90,7 +90,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-void fixBike(char brokenParts[], float moneyLeft)
+void fixBike(const char* brokenParts, float moneyLeft)
 {
     ignoreUnused(brokenParts, moneyLeft);
 }
@@ -98,7 +98,7 @@ void fixBike(char brokenParts[], float moneyLeft)
 /*
  2)
  */
-void cookMeal(char recipe[], bool cleanKitchen)
+void cookMeal(const char* recipe, bool cleanKitchen)
 {
     ignoreUnused(recipe, cleanKitchen);
 }
@@ -123,7 +123,7 @@ void supermarket(int dailyCustomers, double income, bool cleanArea)
 /*
  5)
  */
-bool library(int numberOfBooks, float rentPerDay, char bookTitle[])
+bool library(int numberOfBooks, float rentPerDay, const char* bookTitle)
 {
     ignoreUnused(numberOfBooks, rentPerDay, bookTitle);
     return {};
@@ -132,7 +132,7 @@ bool library(int numberOfBooks, float rentPerDay, char bookTitle[])
 /*
  6)
  */
-void djConsole(bool autoqueue, float bpm, char genre[])
+void djConsole(bool autoqueue, float bpm, const char* genre)
 {
     ignoreUnused(autoqueue, bpm, genre);
 }
@@ -148,7 +148,7 @@ void multibandCompressor(bool playSound, float frequencyRange, float compressRat
 /*
  8)
  */
-void study(char module[], float hoursPerDay, bool finalProject)
+void study(const char* module, float hoursPerDay, bool finalProject)
 {
     ignoreUnused(module, hoursPerDay, finalProject);
 }
@@ -163,7 +163,7 @@ bool factory(bool finishedTask, int numberOfObjects, int workersOnShift)
 /*
  10)
  */
-bool washMachine(bool hasClothes, char programType[], int temperature)
+bool washMachine(bool hasClothes, const char* programType, int temperature)
 {
     ignoreUnused(hasClothes, programType, temperature);
     return {};
