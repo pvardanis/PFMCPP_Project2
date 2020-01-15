@@ -90,19 +90,17 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-bool fixBike(char brokenParts[], float moneyLeft)
+void fixBike(char brokenParts[], float moneyLeft)
 {
     ignoreUnused(brokenParts, moneyLeft);
-    return {};
 }
 
 /*
  2)
  */
-bool cookMeal(char recipe[], bool cleanKitchen)
+void cookMeal(char recipe[], bool cleanKitchen)
 {
     ignoreUnused(recipe, cleanKitchen);
-    return {};
 }
 
 /*
@@ -117,10 +115,9 @@ double processInput(float gain, double attackTime)
 /*
  4)
  */
-float supermarket(int dailyCustomers, double income, bool cleanArea)
+void supermarket(int dailyCustomers, double income, bool cleanArea)
 {
     ignoreUnused(dailyCustomers, income, cleanArea);
-    return {};
 }
 
 /*
@@ -135,28 +132,25 @@ bool library(int numberOfBooks, float rentPerDay, char bookTitle[])
 /*
  6)
  */
-bool djConsole(bool autoqueue, float bpm, char genre[])
+void djConsole(bool autoqueue, float bpm, char genre[])
 {
     ignoreUnused(autoqueue, bpm, genre);
-    return {};
 }
 
 /*
  7)
  */
-bool multibandCompressor(bool playSound, float frequencyRange, float compressRatio)
+void multibandCompressor(bool playSound, float frequencyRange, float compressRatio)
 {
     ignoreUnused(playSound, frequencyRange, compressRatio);
-    return {};
 }
 
 /*
  8)
  */
-bool study(char module[], float hoursPerDay, bool finalProject)
+void study(char module[], float hoursPerDay, bool finalProject)
 {
     ignoreUnused(module, hoursPerDay, finalProject);
-    return {};
 }
 /*
  9)
