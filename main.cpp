@@ -57,7 +57,7 @@ void variableDeclarations()
 
     char myName[] = "Panos";
     char UniversityDegree[] = "Electrical Engineer";
-    char email[] = "panosvardanis@gmail.com";
+    char email[] = "panosvardanis@gmail.com"; FIXME do you really want this public?  your repo and repl.it are public
 
     bool finishedTask = false;
     bool washedDishes = false;
