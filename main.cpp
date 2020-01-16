@@ -13,16 +13,12 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t)
  put them here: 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ int
+ char
+ bool
+ float 
+ double
+ void 
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration function.
     give each declaration an initial value
@@ -56,10 +52,30 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
+    int modulesPassed = 18;
+    int passengersCheckedIn = 198;
+
+    char myName[] = "Panos";
+    char UniversityDegree[] = "Electrical Engineer";
+    char email[] = "somerandomemail@gmail.com"; 
+
+    bool finishedTask = false;
+    bool washedDishes = false;
+    bool sufficientEvidence = true;
+
+    float moneyLeft = 95.68f;
+    float radius = 6.5f;
+    float distanceMeasured = 150.87f;
+
+    double pi = 3.14159265359;
+    double measuredElectronSpeed = 35.9875008268;
+    double massOfParticle = 0.0000005802;
     
-    
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, modulesPassed, passengersCheckedIn,
+                 myName, UniversityDegree, email, finishedTask,
+                 washedDishes, sufficientEvidence, moneyLeft,
+                 radius, distanceMeasured, pi, measuredElectronSpeed,
+                 massOfParticle); //passing each variable declared to the ignoreUnused() function
 }
 /*
  10 functions
@@ -74,42 +90,84 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+void fixBike(const char* brokenParts, float moneyLeft)
+{
+    ignoreUnused(brokenParts, moneyLeft);
+}
 
 /*
  2)
  */
+void cookMeal(const char* recipe, bool cleanKitchen)
+{
+    ignoreUnused(recipe, cleanKitchen);
+}
 
 /*
  3)
  */
+double processInput(float gain, double attackTime)
+{
+    ignoreUnused(gain, attackTime);
+    return {};
+}
 
 /*
  4)
  */
+void supermarket(int dailyCustomers, double income, bool cleanArea)
+{
+    ignoreUnused(dailyCustomers, income, cleanArea);
+}
 
 /*
  5)
  */
+bool library(int numberOfBooks, float rentPerDay, const char* bookTitle)
+{
+    ignoreUnused(numberOfBooks, rentPerDay, bookTitle);
+    return {};
+}
 
 /*
  6)
  */
+void djConsole(bool autoqueue, float bpm, const char* genre)
+{
+    ignoreUnused(autoqueue, bpm, genre);
+}
 
 /*
  7)
  */
+void multibandCompressor(bool playSound, float frequencyRange, float compressRatio)
+{
+    ignoreUnused(playSound, frequencyRange, compressRatio);
+}
 
 /*
  8)
  */
-
+void study(const char* module, float hoursPerDay, bool finalProject)
+{
+    ignoreUnused(module, hoursPerDay, finalProject);
+}
 /*
  9)
  */
-
+bool factory(bool finishedTask, int numberOfObjects, int workersOnShift)
+{
+    ignoreUnused(finishedTask, numberOfObjects, workersOnShift);
+    return {};
+}
 /*
  10)
  */
+bool washMachine(bool hasClothes, const char* programType, int temperature)
+{
+    ignoreUnused(hasClothes, programType, temperature);
+    return {};
+}
 
 int main()
 {
@@ -117,25 +175,26 @@ int main()
     rentACar(6, 2); 
     
     //1)
-    
+    fixBike("brake", 58.5f);
     //2)
-    
+    cookMeal("spaghetti", false);
     //3)
-    
+    processInput(1.2f, 0.45);
     //4)
-    
+    supermarket(250, 1300.0, true);
     //5)
-    
+    library(1235, 2.5f, "1984");
     //6)
-    
+    djConsole(false, 85.5f, "hip hop");
     //7)
-    
+    multibandCompressor(true, 85.5f, 2.5f);
     //8)
-    
+    study("Physics I", 4.5f, true);
     //9)
-    
+    factory(false, 500, 12);
     //10)
-    
+    washMachine(false, "dark care", 30);
+
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
